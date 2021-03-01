@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/* Секция каталога */
+.catalog {
+  min-height: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 100px;
+}
+
+.catalog-heading {
+  text-align: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+}
+
+.catalog-text {
+  margin-top: -5px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+}
+
+.catalog-card {
+  width: 32%;
+  background-color: #F8F8F8;
+  margin-bottom: 30px;
+}
+
+.catalog-picture {
+  width: 100%;
+}
+
+.catalog-card-heading {
+  padding: 0 18px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.catalog-card-text {
+  padding: 0 18px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+}
+
+.catalog-card-costs {
+  padding: 0 18px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+  padding-bottom: 20px;
+}
+
+.catalog-button {
+  margin: 50px auto 40px;
+}
+
+.catalog-button-link {
+  width: 212px;
+  height: 48px;
+  color: #F26376;
+  border: 1px solid #F26376;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 48px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 19px 40px;
+}
+
+/* Секция каталога/ */
+/*# sourceMappingURL=catalog.css.map */

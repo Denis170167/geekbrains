@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* Хедер */
+.header {
+  margin: 0 auto;
+  background-color: #222222;
+  min-height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-group a {
+  margin: 10px 20px;
+}
+
+.menu-group a {
+  margin: 10px 20px;
+}
+
+/* Хедер */
+/*# sourceMappingURL=header.css.map */

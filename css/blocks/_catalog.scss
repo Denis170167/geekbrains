@@ -1,0 +1,120 @@
+/* Секция каталога */
+.catalog {
+    min-height: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 100px;
+}
+.catalog-heading {
+    text-align: center;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+.catalog-text {
+    margin-top: -5px;
+    flex-basis: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+.catalog-card {
+    position: relative;
+    width: 358px;
+    background-color: #F8F8F8;
+    margin-bottom: 30px;
+}
+
+.card-overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 425px;
+    opacity: 0;
+    transition-duration: 0.4s;
+    transition-delay: 0.2s;
+    background-color: rgba(58, 56, 56, 0.86);
+
+    &:hover {
+        opacity: 1;
+    }
+}
+.btn-AddToCart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 45px;
+    background-color: rgba(58, 56, 56, 0.86);
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+}
+.catalog-picture {
+    width: 100%;
+}
+.catalog-card-heading {
+    padding: 0 18px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+.catalog-card-text {
+    padding: 0 18px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+.catalog-card-costs {
+    padding: 0 18px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    padding-bottom: 20px;
+}
+.catalog-button {
+    display: block;
+    margin: 50px auto 40px;
+    transition-duration: 0.8s;
+
+    &:hover {
+        transform: rotateY(360deg);
+    }
+}
+.catalog-button-link {
+    width: 212px;
+    height: 48px;
+    color: #F26376;
+    border: 1px solid #F26376;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 48px;
+    flex-basis: 100%;
+    padding: 19px 40px;
+    opacity: 0.8;
+
+    &:hover {
+        opacity: 1;
+    }
+    &:active {
+        color: #FFF;
+        background-color: $pink;
+        
+    }
+}
+/* Секция каталога/ */

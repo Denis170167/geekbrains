@@ -1,0 +1,84 @@
+/* Секция Обратноя связи */
+.feedback {
+    min-height: 448px;
+    background-image: url(../img/photo_subscribe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.personal-info {
+    margin: 0;
+    text-align: center;
+    width: 32%;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+.personal-info img {
+    border-radius: 100px;
+    padding-bottom: 30px;
+}
+.subscribe {
+    max-width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.subscribe-heading {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+    margin: 0;
+}
+.subscribe-text {
+    font-size: 18px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+    margin: -4px 0 30px;;
+}
+.sibscribe-email {
+    padding: 20px;
+    border: none;
+    background-color: #E1E1E1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 260px;
+    font-size: 16px;
+    line-height: 17px;
+    color: #222224;
+
+    &::placeholder {
+        font-size: 14px;
+        line-height: 17px;
+        color: #222224;
+        opacity: 0.67;
+    }
+}
+.subscribe-button {
+    width: 100px;
+    border: none;
+    padding: 20px;
+    color: #FFFFFF;
+    background-color: #F16D7F;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    opacity: 0.75;
+    transition-duration: 0.3s;
+
+    &:hover {
+        opacity: 0.8;
+        
+    }
+
+    &:active {
+        opacity: 1;
+    }
+}
+
+/* Секция Обратноя связи */

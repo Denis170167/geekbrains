@@ -1,0 +1,123 @@
+/* Хедер */
+.header {
+    margin: 0 auto;
+    background-color: #222222;
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* МЕНЮ НАВИГАЦИИ */
+#main-menu {
+    position: absolute;
+    display: none;
+    left: -999999px;
+}
+.header-overlay {
+    z-index: 10;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: flex-end;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    right: 0;
+    height: 800px;
+}
+.navigation {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    background-color: #fff;
+    width: 230px;
+    padding: 20px 30px 40px 30px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+
+    & label {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+}
+#main-menu:checked ~ .header-overlay {
+    display: flex;
+}
+
+.menu-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.menu-heading {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 17px;
+    color: $pink;
+}
+.menu-list {
+    margin: 0;
+    list-style-type: none;
+    padding-left: 10px;
+
+}
+.menu-link {
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+.menu-item {
+    margin-top: 10px;
+}
+
+/* МЕНЮ НАВИГАЦИИ */
+.logo-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-group a {
+    margin: 10px 20px;
+}
+.logo {
+    display: block;
+    opacity: 0.8;
+    transition-duration: 0.3s;
+    
+
+    &:hover {
+        opacity: 0.9;
+        transform: scale(1.2);
+    }
+
+    &:active {
+        opacity: 1;
+    }
+}
+.forma {
+    opacity: 0.8;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &:active {
+        opacity: 1;
+    }
+
+}
+
+
+
+.menu-group a {
+    margin: 10px 20px;
+}
+/* Хедер */

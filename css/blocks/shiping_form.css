@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/*  Блок формы заказа  товара*/
+.shiping-form {
+  margin-top: 40px;
+  min-height: 272px;
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.shiping-heading {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.shiping-information {
+  padding-left: 8px;
+  margin-top: 20px;
+  border: 1px solid #A4A4A4;
+  height: 45px;
+  width: 100%;
+}
+
+.shiping-button {
+  margin-top: 22px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #A4A4A4;
+  width: 101px;
+  height: 35px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 32px;
+  color: #4A4A4A;
+}
+
+/*  Блок формы заказа  товара*/
+/*# sourceMappingURL=shiping_form.css.map */
