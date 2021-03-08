@@ -15,7 +15,6 @@
     visibility: hidden;
 }
 
-
 body {
     margin: 0;
     padding: 0;
@@ -128,6 +127,7 @@ body {
 @import "blocks/_footer.scss";
 /* Футер */
 
+
 /* Страница коталогов */
 /* блок нафигации*/
 .nav {
@@ -162,7 +162,6 @@ body {
 }
 /* блок нафигации*/
 
-
 /* Блок фильтра */
 .filter {
     min-height: 100px;
@@ -172,7 +171,7 @@ body {
 }
 .filter-menu {
     position: relative;
-    width: 360px;
+    width: 33.5%;
     background-color: #fff;
     font-weight: 600;
     font-size: 14px;
@@ -424,6 +423,7 @@ body {
 }
 
 
+
 .product-button {
     text-decoration: none;
     padding-top: 5px;
@@ -459,6 +459,7 @@ main {
 /* Блок каталога */
 .product-catalog {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 120px;
     padding-bottom: 120px;
@@ -634,7 +635,6 @@ main {
         border: 1px solid $pink;
     }
 }
-
 /*  БЛОК КНОПОК УПРАВЛЕНИЯ*/
 
 /* страница Регистрации */
@@ -643,7 +643,7 @@ main {
 
 /* страница Регистрации */
 
-
+/* Планшетная версия */
 @media (max-width: 1180px) {
     .container {
         padding: 0 calc(50% - 768px / 2);
@@ -678,8 +678,56 @@ main {
     .subscribe {
         padding-top: 70px;
     }
+    .filter {
+        justify-content: space-between;
+    }
+    .catalog-card {
+        margin: 15px 13px 30px 13px;
+    }
+    .basket-card {
+        width: 97%;
+    }
+    .card-buttons {
+        width: 100%;
+        justify-content: space-around;
+        order: 3;
+    }
+    .card-button {
+        width: 46%;
+    }
+    .shiping-form {
+        order: 4;
+        width: 48%;
+    }
+    .total-costs {
+        order: 5;
+        width: 49%;
+    }
+    .registration-form {
+        width: 49%;
+    }
+    .registration-description {
+        width: 48%;
+        margin-left: 2%;
+    }
+    .slider {
+        min-height: 624px;
+    }
+    .slider-picture {
+        min-height: 565px;
+    }
+    .product-description {
+        width: 760px;
+        margin-top: 0px;
+    }
+    .product-text {
+        padding: 0 100px;
+    }
+    
 }
+/* Планшетная версия */
 
+/* Мобильная версия */
 @media (max-width: 780px) {
     .container {
         padding: 0 calc(50% - 370px / 2);
@@ -720,4 +768,84 @@ main {
         flex-direction: column-reverse;
         justify-content: space-around;
     }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .span-filter {
+        display: none;
+    }
+    .fa-sort-amount-up {
+        font-size: 25px;
+    }
+    .filter-menu {
+        width: 10%;
+    }
+    .filter-category {
+        width: 80%;
+    }
+    .basket-card {
+        width: 100%;
+        min-height: 190px;
+    }
+    .card-picture {
+        padding-right: 0;
+        width: 144px;
+    }
+    .catalog-card-heading {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .text-information {
+        padding-top: 3px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .input-quantity {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .card-buttons {
+        width: 100%;
+    }
+    .card-button {
+        height: 33px;
+        font-size: 12px;
+        line-height: 33px;
+        width: 46%;
+    }
+    .shiping-form {
+        width: 98%;
+    }
+    .total-costs {
+        order: 5;
+        width: 98%;
+    }
+    .registration-form {
+        width: 98%;
+    }
+    .registration-description {
+        margin: 20px;
+        width: 98%;
+        margin-left: 0%;
+    }
+    .navform-heading {
+        text-align: center;
+    }
+    .slider {
+        align-items: center;
+        min-height: 624px;
+    }
+    .slider-picture {
+        min-height: 454px;
+    }
+    .product-description {
+        width: 375px;
+    }
+    .product-text {
+        padding: 0 18px;
+    }   
 }
+/* Мобильная версия */

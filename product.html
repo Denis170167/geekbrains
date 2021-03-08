@@ -58,10 +58,14 @@
       <p class="breadcrumb">HOME / MEN / <span class="span-nav">NEW ARRIVALS</span> </p>
     </section>
     <section class="slider">
-
       <button class="slider-scroll scroll-left"><i class="fas fa-chevron-left"></i></button>
       <!--<img src="IMG/svg-left.svg" alt="svg-svg-picture" class="slider-scroll scroll-left">-->
-      <img src="IMG/slider_picture1.jpg" alt="picture-woman" class="slider-picture">
+      <picture class="slider-picture">
+        <source media="(min-width: 1180px)" srcset="img/slider_picture_1.jpg">
+        <source media="(min-width: 770px)" srcset="img/slider_picture_2.jpg">
+        <img src="img/slider_picture_3.jpg" alt="picture-woman">
+    </picture>
+      <!--<img src="IMG/slider_picture1.jpg" alt="picture-woman" class="slider-picture">-->
       <!--<img src="IMG/svg-right.svg" alt="svg-picture" class="slider-scroll scroll-right">-->
       <button class="slider-scroll scroll-right"><i class="fas fa-chevron-right"></i></button>
     </section>
@@ -74,7 +78,16 @@
       <hr class="line2">
       <div class="product-filter">
         <p class="filters-menu">CHOOSE COLOR&nbsp;<img src="img/vector-down.svg" alt=""></p>
-        <p class="filters-menu">CHOOSE SIZE&nbsp;<img src="img/vector-down.svg" alt=""> </p>
+       <div class="filter-item">
+       <input type="checkbox" class="filter-check" id="check">
+				<label class="check-title filters-menu" for="check">CHOOSE SIZE &nbsp;&nbsp;<img src="img/vector-down.svg" alt=""></label>
+				<ul class="check-drop">
+					<li class="check-item"><input type="checkbox">XS</li>
+					<li class="check-item"><input type="checkbox">S</li>
+					<li class="check-item"><input type="checkbox">M</li>
+					<li class="check-item"><input type="checkbox">L</li>
+        </ul>
+      </div>
         <p class="filters-menu">QUANTITY&nbsp;<img src="img/vector-down.svg" alt=""></p>
       </div>
       <a href="#" class="product-button"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Add to Cart</a>
